@@ -1,0 +1,22 @@
+//Algorithm: IsPalindrome
+
+ Function isPalindrome(word):
+     Let n be the length of word
+     If n <= 1 then:
+         Return true
+     End If
+     If word[0] equals word[n - 1] then:
+         Return isPalindrome(word[1: n - 1])
+     Else:
+         Return false
+    End If
+
+ Let word = the word to be checked for palindrome
+
+ Let result = isPalindrome(word)
+
+ If result is true then:
+    Print "The word is a palindrome"
+ Else:
+    Print "The word is not a palindrome"
+ End If
